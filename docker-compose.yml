@@ -33,6 +33,7 @@ services:
       - SMTP_RECEIVER_EMAIL=YourEmail@gmail.com
       # Slack Notification:
       - SLACK_NOTIFICATION_ENABLED=true
+      - SLACK_WEBHOOK_URL=your.slackwebook.url
       # THERE IS NO NEED TO MODIFY BELOW THIS LINE
       # ------------------------------------------
       # FEEL FREE, BUT KNOW WHAT YOU'RE DOING.
