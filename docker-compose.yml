@@ -31,6 +31,8 @@ services:
       - SMTP_PASSWORD=YourEmailPassword
       - SMTP_FROM_EMAIL=YourEmail@gmail.com
       - SMTP_RECEIVER_EMAIL=YourEmail@gmail.com
+      # Slack Notification:
+      - SLACK_NOTIFICATION_ENABLED=true
       # THERE IS NO NEED TO MODIFY BELOW THIS LINE
       # ------------------------------------------
       # FEEL FREE, BUT KNOW WHAT YOU'RE DOING.
