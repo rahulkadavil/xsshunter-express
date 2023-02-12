@@ -37,18 +37,17 @@ async function send_email_notification(xss_payload_fire_data) {
 
 async function send_slack_notification(xss_payload_fire_data) {
 	const webhookurl = process.env.SLACK_WEBHOOK_URL
-	const xss_payload_fire_data = {
+	const xss_payload_fire_data1 = {
    		 'text':  'Blind XSS Fired at: ' + xss_payload_fire_data.url
 	};
 	
 	try {
-        messageBody = JSON.stringify(xss_payload_fire_data);
+        messageBody = JSON.stringify(xss_payload_fire_data1);
       	} 
 	catch (e) {
         throw new Error('Failed to stringify messageBody', e);
       	}
 	
-	});
       	return new Promise((resolve, reject) => {
         // general request options, we defined that it's a POST request and content is JSON
         const requestOptions = {
