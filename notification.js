@@ -56,7 +56,7 @@ async function send_slack_notification(xss_payload_fire_data) {
             'Content-Type': 'application/json'
           }
         };
-	const req = https.request(webhookURL, requestOptions, (res) => {
+	const req = https.request(webhookurl, requestOptions, (res) => {
         let response = '';
         res.on('data', (d) => {
           response += d;
