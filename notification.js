@@ -36,7 +36,7 @@ async function send_email_notification(xss_payload_fire_data) {
 }
 
 async function send_slack_notification(xss_payload_fire_data) {
-	const webhookurl = process.env.SLACK_WEBHOOK_URL
+	const webhookurl: process.env.SLACK_WEBHOOK_URL
 	const xss_payload_fire_data1 = {
    		 'text':  'Blind XSS Fired at: ' + xss_payload_fire_data.url
 	};
