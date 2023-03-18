@@ -6,6 +6,9 @@
 1. Create a Slack webhook as specified in the URL: https://api.slack.com/messaging/webhooks
 2. In ```docker-compose.yaml``` file set the SLACK_NOTIFICATION_ENABLED value to true
 3. Update the ```SLACK_WEBHOOK_URL``` in ```docker-compose.yaml``` and point to your webhook
+
+![Alt text](images/screenshot.jpg?raw=true "Screnshot from Slack")
+
  
 
 
